@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+   rel="icon"
+   type="image/png"
+   sizes="32x32"
+   href="./images/favicon-32x32.png"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Frontend Mentor | Interactive pricing component</title>
+ </head>
+ <body>
+  <div class="header-bg"></div>
+  <div class="container">
+   <header class="header">
+    <h1 class="header__title">Simple, traffic-based pricing</h1>
+    <p class="header__text">
+     Sign-up for our 30-day trial. No credit card required.
+    </p>
+   </header>
+   <main>
+    <div class="card">
+     <p class="card__pageviews" id="pageviews">100K Pageviews</p>
+     <div class="slider-container">
+      <input
+       aria-label="Price Range Slider"
+       class="slide-goog"
+       type="range"
+       name="slide-bar"
+       id="price-range"
+       min="0"
+       max="4"
+       step="1"
+       value="2"
+      />
+     </div>
+     <div class="card__price">
+      $ <span class="card__price--number" id="price">16.00</span
+      ><span class="card__price--month">/ month</span>
+     </div>
+     <div class="card__billing">
+      <p class="card__billing--monthly">Monthly Billing</p>
+      <span
+       ><input
+        type="checkbox"
+        name="discount"
+        id="discount"
+        class="card__toggle"
+      /></span>
+      <p class="card__billing--yearly">Yearly Billing</p>
+      <span class="card__billing--percentage"></span>
+     </div>
+     <div class="dt-wrap">
+      <ul class="card__list">
+       <li class="card__item">
+        <span><img src="/images/icon-check.svg" alt="check-mark" /></span>
+        Unlimited websites
+       </li>
+       <li class="card__item">
+        <span><img src="/images/icon-check.svg" alt="check-mark" /></span> 100%
+        data ownership
+       </li>
+       <li class="card__item">
+        <span><img src="/images/icon-check.svg" alt="check-mark" /></span> Email
+        reports
+       </li>
+      </ul>
+      <button class="btn">Start my trial</button>
+     </div>
+    </div>
+   </main>
+  </div>
+
+  <footer class="footer">
+   Challenge by
+   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+   >. Coded by <a href="#">Rab Winter</a>.
+  </footer>
+
+  <script src="/app/js/script.js"></script>
+ </body>
+</html>
